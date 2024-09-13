@@ -1,7 +1,7 @@
 /***************************************************
  * hello.c
- * Author: Aline Normoyle
- * Date: 1/11/2022
+ * Author: Kripa Lamichhane
+ * Date: 1/08/2024
  * Print Hello World
  */
 
