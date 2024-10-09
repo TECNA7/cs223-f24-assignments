@@ -62,7 +62,7 @@ int main() {
         songs[i].valence = atof(strtok(NULL, ","));
     }
 
-    print_songs(songs, num_songs);
+    prints(songs, num_songs);
 
     // Freed
     free(songs);
