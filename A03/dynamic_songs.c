@@ -62,7 +62,11 @@ int main() {
         songs[i].valence = atof(strtok(NULL, ","));
     }
 
+<<<<<<< HEAD
     prints(songs, num_songs);
+=======
+    print(songs, num_songs);
+>>>>>>> 8a5365046eba6a7c4a47a7c8384f64a53046b574
 
     // Freed
     free(songs);
