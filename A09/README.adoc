@@ -1,9 +1,14 @@
 = Hardware specifications
 
-Where did your run your tests? A laptop, or goldengate?
+Where did your run your tests? A laptop, or goldengate? - Laptop
 
 What are the performance specifications of the machine: number and speed of
-processors, size of RAM? (use `lscpu` and `free -m`)
+processors, size of RAM? (use `lscpu` and `free -m`) 
+
+=> Here,
+	Number of processors : 64 
+	Speed of processors : 1200.038 MHz
+	Size of RAM :  95302 MB 
 
 = Single-process mandelbrot
 
@@ -19,7 +24,6 @@ the amount of time it takes to compute each image.
 | 1000 | 0.400530
 | 2000 | 0.402933
 !===
-
 = Multi-process mandelbrot
 
 Run your executable, `multi_mandelbrot`, with the following sizes and record
