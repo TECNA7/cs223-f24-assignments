@@ -1,14 +1,16 @@
-CC=gcc
-SOURCES=grep dependency
-FILES := $(subst .c,,$(SOURCES))
-FLAGS=-g -Wall -Wvla -Werror -Wno-unused-variable -Wno-unused-but-set-variable
+CC = gcc
+CFLAGS = -g -Wall -Wvla -Werror -Wno-unused-variable -Wno-unused-but-set-variable
+OBJS = tree.o
+TARGET = tree_tests
 
-# By default, make runs the first target in the file
-all: $(FILES)
+all: $(TARGET)
 
-% :: %.c
-	$(CC) $(FLAGS) $< -o $@ -lpthread -lreadline
+$(TARGET): tree_tests.c $(OBJS)
+	$(CC) $(CFLAGS) tree_tests.c $(OBJS) -o $(TARGET) -lpthread -lreadline
+
+tree.o: tree.c tree.h
+	$(CC) $(CFLAGS) -c tree.c -o tree.o
 
 clean:
-	rm -rf $(FILES)
+	rm -f $(TARGET) $(OBJS)
 
