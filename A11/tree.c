@@ -1,3 +1,7 @@
+/*Authour : Kripa Lamichhane
+ * Date: 11/28/2024
+ * Description: implement a binary search tree
+ * */
 #include "tree.h"
 #include <stdio.h>
 #include <stdlib.h>

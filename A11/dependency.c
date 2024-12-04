@@ -1,3 +1,8 @@
+/*Author : Kripa Lamichhane
+ * Date: 11/28/2024
+ * Description:  implement a program that uses N threads to build a binary search tree of a given set of files
+ * *
+ * */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
